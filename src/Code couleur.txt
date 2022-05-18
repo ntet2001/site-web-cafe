@@ -1,0 +1,4 @@
+main color:#be9c79;
+black:#333;
+light-color:#666;
+box-shadow:0 .5rem 1rem rgba(0,0,0,.1);

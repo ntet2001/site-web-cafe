@@ -1,0 +1,406 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 100%;
+}
+/*
+*header style
+*
+*/
+header{
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+}
+header .navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    z-index: 2;
+}
+header .navbar #logo{
+    height: 50px;
+    width: 50px;
+    padding: 0px 5px;
+}
+header .navbar #logo img{
+    width: 100%;
+}
+header .navlinks nav ul {
+    display: flex;
+}
+header .navlinks nav ul li{
+    list-style: none;
+}
+@font-face {
+    font-family: 'OpenSans';
+    src: url('./src/OpenSans-Regular.ttf');
+}
+header .navlinks nav ul li a{
+    margin: 0px 10px;
+    text-decoration: none;
+    color: #333;
+    font-family: 'OpenSans';
+    font-size: 16px;
+    transition: 0.5s;
+}
+header .navlinks nav ul li a:hover{
+    text-decoration: underline;
+    color: #be9c79;
+}
+/*
+*
+*banner style
+*/
+.banner{
+    height: 750px;
+    width: 100%;
+    background-image: url('./src/home-bg.jpg');
+    z-index: 1;
+    display: flex;
+    align-items: center;
+}
+.banner .presentation{
+    margin-left: 100px;
+    text-align: center;
+}
+@font-face {
+    font-family: 'MeriendaOne';
+    src: url('./src/MeriendaOne-Regular.ttf');
+}
+.banner .presentation h1{
+    font-family: 'MeriendaOne';
+    font-size: 55px;
+    font-weight: bold;
+    color: #333;
+}
+.banner .presentation p{
+    font-family: 'OpenSans';
+    color: #333;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+.banner .presentation button{
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #be9c79;
+    color: #fff;
+    font-family: 'OpenSans';
+    font-size: 17px;
+    font-weight: 500px;
+    transition: ease-in 0.5s;
+    cursor: pointer;
+}
+.banner .presentation button:hover{
+    background-color: #333;
+}
+/**
+*style of section about
+*/
+#About{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+#About .aboutImage{
+    width: 500px;
+    height: 500px;
+    order: 1;
+}
+#About .aboutMenu{
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    order: 2;
+}
+#About .aboutMenu h2{
+    font-family: 'MeriendaOne';
+    font-size: 35px;
+    font-weight: bold;
+    color: #333;   
+}
+#About .aboutMenu p{
+    font-family: 'OpenSans';
+    color: #333;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+#About .aboutMenu button{
+    border: none;
+    width: 120px;
+    height: 40px;
+    border: none;
+    background-color: #be9c79;
+    color: #fff;
+    font-family: 'OpenSans';
+    font-size: 17px;
+    font-weight: 500px;
+    cursor: pointer;
+    transition: ease-in 0.5s;
+}
+#About .aboutMenu button:hover{
+    background-color: #333;
+}
+/*
+*Facility style 
+*/
+.facility-card{
+    height: auto;
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin-bottom: 100px;
+}
+.facility-header{
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.facility-header h2{
+    font-family: 'MeriendaOne';
+    font-size: 35px;
+    color: #333;
+}
+.facility1,.facility2,.facility3,.facility4{
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+}
+.facility1 h3,.facility2 h3,.facility3 h3,.facility4 h3{
+    font-family: 'OpenSans';
+    font-size: 25px;
+    color: #333;
+}
+.facility1 p,.facility2 p,.facility3 p,.facility4 p{
+    font-family: 'OpenSans';
+    color: #333;
+    font-size: 15px;
+}
+/*
+*this is style for Menu
+*/
+#Menu{
+    margin-bottom: 100px;
+}
+.menu{
+    display: grid;
+    height: auto;
+    width: auto;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    column-gap: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+#Menu img{
+    width: auto;
+    height: auto;
+}
+.menu-header{
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.menu-header h2{
+    font-family: 'MeriendaOne';
+    font-size: 35px;
+    color: #333;
+}
+.menu1,.menu2,.menu3,.menu4,.menu5,.menu6{
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin-bottom: 80px;
+}
+.menu1 p,.menu2 p,.menu3 p,.menu4 p,.menu5 p,.menu6 p{
+    font-family: 'OpenSans';
+    font-size: 16px;
+    color: #333;
+}
+/*
+*this is the style of the food gallery
+*/
+#Gallery{
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-bottom: 100px;
+}
+.gallery-header{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    margin-bottom: 20px;
+}
+.gallery-header h2{
+    font-family: 'MeriendaOne';
+    font-size: 35px;
+    color: #333;
+}
+.galleryImage{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.galleryImage img{
+    width: 100%;
+}
+/*
+*style for team presentation
+*/
+#Team{
+    margin-bottom: 100px;
+}
+.Team-header{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    margin-bottom: 20px;
+}
+.Team-header h2{
+    font-family: 'MeriendaOne';
+    font-size: 35px;
+    color: #333;  
+}
+.team-members{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    column-gap: 20px;
+    row-gap: 30px;
+    text-align: center;
+    font-family: 'MeriendaOne';
+    color: #333;
+    padding: 0px 100px;
+}
+.team-members img{
+    width: 100%;
+}
+/*
+*style for section contact
+*/
+#Contact{
+    margin-bottom: 100px;
+}
+.contact-header{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    margin-bottom: 20px;
+}
+.contact-header h2{
+    font-family: 'MeriendaOne';
+    color: #333;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+.contact-form{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    align-items: center;
+    justify-content: center;
+}
+.contact-form img{
+    width: 100%;
+}
+.contact2{
+    border: #333 solid 2px;
+    height: 350px;
+    width: auto;
+    margin: 0px 50px;
+    padding: 20px 0px;
+}
+.contact2 h3{
+    text-align: center;
+    font-family: 'OpenSans';
+    color: #333;
+    margin-bottom: 30px;
+}
+.contact2 form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contact2 form input{
+    width: 90%;
+    height: 50px;
+    border: none;
+    border: #333 solid 2px;
+    font-family: 'OpenSans';
+    font-size: 16px;
+    padding-left: 20px;
+}
+.contact2 form button{
+    height: 50px;
+    color: #fff;
+    background-color: #be9c79;
+    border: none;
+    font-family: 'OpenSans';
+    font-size: 16px;
+    padding: 0px 40px;
+    transition: background 0.5s ease-in;
+    cursor: pointer;
+}
+.contact2 form button:hover{
+    background-color: #333;
+}
+.info{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    margin-bottom: 20px;
+}
+.info .infoCard1,.info .infoCard2,.info .infoCard3,.info .infoCard4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'OpenSans';
+    color: #333;
+}
+.info .infoCard1 .infoImage,.info .infoCard2 .infoImage,.info .infoCard3 .infoImage,.info .infoCard4 .infoImage{
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    border-radius: 60%;
+    background-color:#be9c79;
+    width: 60px;
+    height: 60px;
+    margin:20px 0px;
+}
+.info .infoCard1 span,.info .infoCard2 span,.info .infoCard3 span,.info .infoCard4 span{
+    font-size: 15px;
+    margin-top: 10px;   
+}
+.info .infoCard1  span a{
+    text-decoration: none;
+    color: #333;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'OpenSans';
+    color: #333;
+    font-size: 17px;
+    margin-bottom: 30px;
+    border-top: #333 1px solid;
+}
+footer span{
+    color: #be9c79;
+}
