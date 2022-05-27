@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 main{
-    width: 100%;
+    width: auto;
     height: 100%;
 }
 /*
@@ -102,6 +102,12 @@ header .navlink li a:hover{
     header #logo{
         z-index: 2;
     }
+    .banner{
+        width: 100%;
+    }
+    #About{
+        width: auto;
+    }
 
 }
 
@@ -162,6 +168,7 @@ header .navlink li a:hover{
     flex-wrap: wrap;
     margin-top: 20px;
     margin-bottom: 100px;
+    width: auto;
 }
 #About .aboutImage{
     width: 500px;
@@ -205,6 +212,9 @@ header .navlink li a:hover{
 /*
 *Facility style 
 */
+.facility{
+    width: auto;
+}
 .facility-card{
     height: auto;
     width: auto;
